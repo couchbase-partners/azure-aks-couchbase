@@ -69,7 +69,7 @@ We will use data from the beer-sample bucket chosen during setup for a N1QL quer
 1. Navigate to the "*Query*" tab.
 2. Type "select `beer-sample`.* from `beer-sample`;" (without the quotes) in the query text box and hit "*Execute*". 
 3. Observe the results and explore the different output format tabs.
-![query results]()
+![query results](https://github.com/sliburd/azure-container-instances-couchbase/blob/master/screenshots/Beer_sample_n1ql_query.PNG)
 
   #### Clean up
   Tear-down is simply deleting the container using the command:
