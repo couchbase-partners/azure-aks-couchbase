@@ -1,5 +1,7 @@
 # Couchbase Cluster on Azure Container Instances (ACI)
 
+This instructions describe how to set up a single node of Couchbase running in ACI.  It's not currently possible to setup multiple nodes of Couchbase in ACI because only a public NAT IP is available.  Once DNS names are available, multiple nodes will be possible.
+
 ## What are Azure Container Instances
 
 ACI containers are conceptually similar to pods in Kubernetes.  While not truly orchestration, ACI
