@@ -1,6 +1,6 @@
 # Azure Kubernetes Service (AKS)
 
-These instructions detail how to deploy a on Azure with Kubernetes.  With that complete, the next step is to setup the operator and then create a Couchbase cluster using the operator.
+These instructions detail how to deploy on Azure with Kubernetes.  With that complete, the next step is to setup the operator and then create a Couchbase cluster using the operator.
 
 We're making use of [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/blog/introducing-azure-container-service-aks-managed-kubernetes-and-azure-container-registry-geo-replication/).  AKS is currently in preview.  Because of that, AKS must be explicitly enabled for the subscription you are working on.  Detailed instructions on how to do that are [here](https://blogs.msdn.microsoft.com/alimaz/2017/10/24/enabling-aks-in-your-azure-subscription/).
 
