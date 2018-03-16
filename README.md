@@ -78,7 +78,7 @@ We're there!  Time to get a live cluster.  Run this:
 
 That should give this:
 
-![couchbasecreated](/images/couchbasecreatedk.png)
+![couchbasecreated](/images/couchbasecreated.png)
 
 You can view the Couchbase and operator pods by running:
 
