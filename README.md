@@ -6,7 +6,9 @@ This is a walkthrough of setting the [Couchbase Operator](https://blog.couchbase
 
 AKS is currently in public preview.  There are a bunch of [nice tutorials](https://docs.microsoft.com/en-us/azure/aks/) on how to use it.
 
-For this walkthrough we're going to use the Azure 2.0 CLI.  If you haven't already, you'll need to [install that and login](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli).  Even if you have the CLI installed already, you might want to update it.  To make sure the Azure 2.0 CLI is working properly try running:
+For this walkthrough we're going to use the Azure 2.0 CLI.  If you haven't already, you'll need to [install that and login](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli).  Even if you have the CLI installed already, you might want to update it.  An alternative would be to do all this in a [cloud shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview), though you'll eventually need to get kubectl working locally in order to set up a tunnel to open a web browser to your Couchbase cluster.
+
+To make sure the Azure 2.0 CLI is working properly try running:
 
     az group list
 
