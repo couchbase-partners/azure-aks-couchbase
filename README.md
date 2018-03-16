@@ -18,15 +18,17 @@ With that all set, we can register the AKS provider, create a resource group and
 
 Note that it's way easier to do this from the CLI because the CLI creates the service principal you need automatically.  If you do this in the portal you'll need to create the service principal manually.
 
-![aks-deploying](/images/aks-deploying.png)
-
-When that all finishes you should see something like this:
-
-XXX
+![deploying](/images/deploying.png)
 
 You can now login to the [Azure Portal](https://portal.azure.com) and take a look at your new cluster there as well:
 
-XXX
+![portal](/images/portal.png)
+
+## Configure kubectl
+
+Now that we have a cluster, the next step is to set kubectl up so it can connect to the cluster.
+
+    az aks get-credentials --resource-group=myResourceGroup --name=myAKSCluster
 
 ## Deploying the Operator
 
