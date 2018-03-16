@@ -35,9 +35,15 @@ When that's done, or even while it's running, you can login to the [Azure Portal
 
 ## Configure kubectl
 
-Now that we have a cluster, the next step is to set kubectl up so it can connect to the cluster.
+Now that we have a cluster, the next step is to install and set up kubectl up so it can connect to the cluster.
 
+    az aks install-cli
     az aks get-credentials --resource-group=myResourceGroup --name=myAKSCluster
+
+You should see something like this:
+
+    ![getcreds](/images/getcreds.png)
+
 
 ## Deploying the Operator
 
