@@ -13,12 +13,12 @@ For this walkthrough we're going to use the Azure 2.0 CLI.  If you haven't alrea
 With that all set, we can register the AKS provider, create a resource group and an AKS cluster:
 
     az provider register -n Microsoft.ContainerService
-    az group create --name myResourceGroup --location eastus
-    az aks create --resource-group myResourceGroup --name myAKSCluster
+    az group create --name myResourceGroup2 --location eastus
+    az aks create --resource-group myResourceGroup2 --name myAKSCluster
 
 Note that it's way easier to do this from the CLI because the CLI creates the service principal you need automatically.  If you do this in the portal you'll need to create the service principal manually.
 
-![deployingaks](/images/deployingaks.png)
+![aks-deploying](/images/aks-deploying.png)
 
 When that all finishes you should see something like this:
 
