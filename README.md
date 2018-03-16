@@ -6,11 +6,15 @@ This is a walkthrough of setting the [Couchbase Operator](https://blog.couchbase
 
 AKS is currently in public preview.  There are a bunch of [nice tutorials](https://docs.microsoft.com/en-us/azure/aks/) on how to use it.
 
-For this walkthrough we're going to use the Azure 2.0 CLI.  If you haven't already, you'll need to [install that and login](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli).  To make sure that's all working properly try running:
+For this walkthrough we're going to use the Azure 2.0 CLI.  If you haven't already, you'll need to [install that and login](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli).  Even if you have the CLI installed already, you might want to update it.  To make sure the Azure 2.0 CLI is working properly try running:
 
     az group list
 
-With that all set, we can create a resource group and an AKS cluster:
+With that all set, we can register the AKS provider, create a resource group and an AKS cluster:
+
+    az provider register -n Microsoft.ContainerService
+    az group create --name myResourceGroup --location eastus
+    az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 3 --generate-ssh-keys
 
 ## Deploying the Operator
 
@@ -23,15 +27,3 @@ To create the deployment, run this:
 Now check that it worked:
 
     kubectl get deployments
-
-## Debugging
-
-Some helpful commands:
-
-    kubectl get nodes
-    kubectl describe node <some node>
-    kubectl describe nodes
-
-    kubectl get pods
-    kubectl describe pod <some pod>
-    kubectl describe pods
