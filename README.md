@@ -44,6 +44,18 @@ You should see something like this:
 
 ![getcreds](/images/getcreds.png)
 
+You might need to set your KUBECONFIG too:
+
+    export KUBECONFIG=~/.kube/config
+
+With all that set up we can make sure our kubectl is working by running:
+
+    kubectl get nodes
+
+That should show three nodes:
+
+![getnodes](/images/getnodes.png)
+
 ## Deploying the Operator
 
 Once you have an AKS cluster deployed and a running kubectl, you're ready to deploy the Operator.  The documentation on that is [here](http://docs.couchbase.com/prerelease/couchbase-operator/beta/overview.html).
