@@ -60,10 +60,44 @@ That should show three nodes:
 
 Once you have an AKS cluster deployed and a running kubectl, you're ready to deploy the Operator.  The documentation on that is [here](http://docs.couchbase.com/prerelease/couchbase-operator/beta/overview.html).
 
-To create the deployment, run this:
+To create the deployment and check it deployed, run this:
 
     kubectl create -f https://s3.amazonaws.com/packages.couchbase.com/kubernetes/beta/operator.yaml
-
-Now check that it worked:
-
     kubectl get deployments
+
+You should see something like this:
+
+![operatordeployed](/images/operatordeployed.png)
+
+## Deploying a Couchbase Cluster
+
+We're there!  Time to get a live cluster.  Run this:
+
+    kubectl create -f https://s3.amazonaws.com/packages.couchbase.com/kubernetes/beta/secret.yaml
+    kubectl create -f https://s3.amazonaws.com/packages.couchbase.com/kubernetes/beta/couchbase-cluster.yaml
+
+That should give this:
+
+![couchbasecreated](/images/couchbasecreatedk.png)
+
+You can view the Couchbase and operator pods by running:
+
+    kubectl get pods
+
+## Accessing the Couchbase Web UI
+
+You've now got a cluster.  But to use it you probably want to set up port forwarding.  To do that run:
+
+    kubectl port-forward cb-example-0000 8091:8091
+
+Leave that command running:
+
+![portforward](/images/portforward.png)
+
+Now open up a browser to http://localhost:8091
+
+![loginscreen](/images/loginscreen.png)
+
+The username is Administrator and password is password.  And now you're in!
+
+![webui](/images/webui.png)
