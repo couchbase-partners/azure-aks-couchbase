@@ -12,9 +12,16 @@ To make sure the Azure 2.0 CLI is working properly try running:
 
     az group list
 
-With that all set, we can register the AKS provider, create a resource group and an AKS cluster:
+With that all set, we can register the AKS provider.  Presumably once the service goes GA this won't be necessary.
 
     az provider register -n Microsoft.ContainerService
+
+If that runs well, you should see:
+
+![provider](/images/provider.png)
+
+Now you're ready to create a resource group and a cluster inside that:
+
     az group create --name myResourceGroup --location eastus
     az aks create --resource-group myResourceGroup --name myAKSCluster
 
