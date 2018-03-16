@@ -98,6 +98,6 @@ Now open up a browser to http://localhost:8091
 
 ![loginscreen](/images/loginscreen.png)
 
-The username is Administrator and password is password.  And now you're in!
+The username is `Administrator` and password is `password`.  And now you're in!
 
 ![webui](/images/webui.png)
