@@ -27,9 +27,9 @@ Now you're ready to create a resource group and a cluster inside that:
 
 Note that it's way easier to do this from the CLI because the CLI creates the service principal you need automatically.  If you do this in the portal you'll need to create the service principal manually.
 
-![deploying](/images/deploying.png)
+![deploying](/images/deployed.png)
 
-You can now login to the [Azure Portal](https://portal.azure.com) and take a look at your new cluster there as well:
+When that's done, or even while it's running, you can login to the [Azure Portal](https://portal.azure.com) and take a look at your new cluster there as well:
 
 ![portal](/images/portal.png)
 
