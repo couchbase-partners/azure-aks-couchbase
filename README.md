@@ -14,7 +14,19 @@ With that all set, we can register the AKS provider, create a resource group and
 
     az provider register -n Microsoft.ContainerService
     az group create --name myResourceGroup --location eastus
-    az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 3 --generate-ssh-keys
+    az aks create --resource-group myResourceGroup --name myAKSCluster
+
+Note that it's way easier to do this from the CLI than graphically in the portal because the CLI creates the service principals you need automatically.
+
+![deployingaks](/images/deployingaks.png)
+
+When that all finishes you should see something like this:
+
+XXX
+
+You can now login to the [Azure Portal](https://portal.azure.com) and take a look at your new cluster there as well:
+
+XXX
 
 ## Deploying the Operator
 
