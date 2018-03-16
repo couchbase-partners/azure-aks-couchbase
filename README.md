@@ -16,7 +16,7 @@ With that all set, we can register the AKS provider, create a resource group and
     az group create --name myResourceGroup --location eastus
     az aks create --resource-group myResourceGroup --name myAKSCluster
 
-Note that it's way easier to do this from the CLI than graphically in the portal because the CLI creates the service principals you need automatically.
+Note that it's way easier to do this from the CLI because the CLI creates the service principal you need automatically.  If you do this in the portal you'll need to create the service principal manually.
 
 ![deployingaks](/images/deployingaks.png)
 
