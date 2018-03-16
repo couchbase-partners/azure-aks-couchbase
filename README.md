@@ -42,8 +42,7 @@ Now that we have a cluster, the next step is to install and set up kubectl up so
 
 You should see something like this:
 
-    ![getcreds](/images/getcreds.png)
-
+![getcreds](/images/getcreds.png)
 
 ## Deploying the Operator
 
