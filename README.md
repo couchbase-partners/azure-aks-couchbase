@@ -2,13 +2,9 @@
 
 This is a walkthrough of setting the [Couchbase Operator](https://blog.couchbase.com/introducing-couchbase-operator/) up on [Azure Container Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/).
 
-## Background
+## Deploy an AKS Cluster
 
-AKS is in public preview as of 3/15/18.  There are a bunch of [nice tutorials]](https://docs.microsoft.com/en-us/azure/aks/) on how to use it.
-
-## Deploy and AKS Cluster
-
-AKS is currently in public preview.  There are a bunch of [nice tutorials]](https://docs.microsoft.com/en-us/azure/aks/) on how to use it.
+AKS is currently in public preview.  There are a bunch of [nice tutorials](https://docs.microsoft.com/en-us/azure/aks/) on how to use it.
 
 For this walkthrough we're going to use the Azure 2.0 CLI.  If you haven't already, you'll need to [install that and login](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli).  To make sure that's all working properly try running:
 
